@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Inicio</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+    <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Start your project here-->  
+    <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top expandir">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">FARMACIA</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+    
+              <li>
+                  
+                <a class="nav-link far fa-user fa-2x sesion" href="InicioSesion.html"></a>
+    
+              </li>
+
+              <li>
+                    
+                  <a class="nav-link fas fa-cart-plus fa-2x sesion" href="cart.html"></a>
+              </li>
+
+              <li>
+                <input type="email" class="form-control desaparece" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buscar">
+              </li>
+
+              <li>
+                <a class="nav-link fab fa-sistrix fa-2x sesion" onclick="aparecer()" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container espacio px-md-4">
+        <h2>Pagar</h2>
+        <h5 class="text-body">Para completar tu pedido, sólo falta llenar los siguientes campos</h5>
+    </div>
+
+
+
+    <section class="border">
+
+        <div class="row justify-content-around">
+            
+            <div class="col-8">
+                    <div class="container bg-light">
+
+                            <div>
+                                
+                                <p class="fas fa-user user-aumento py-5 px-3">  1. Mi cuenta.</p>
+                                
+                            </div>
+                
+                
+                            <div class="row">
+                                <div class="col">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-secondary active">
+                                          <input type="radio" name="options" id="option1" autocomplete="off"  onclick="aparecer1()"> Ya tengo cuenta
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                          <input type="radio" name="options" id="option2" autocomplete="off" onclick="aparecer2()"> Crea cuenta
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                          <input type="radio" name="options" id="option3" autocomplete="off" onclick="aparecer3()"> Invitado
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="col-12 control-datos">
+
+                                <div class="row align-items-end">
+                                    <div class="col-3 pad-top">
+                                        <p>Correo electrónico</p>
+                                    </div>
+                                    <div class="col-3 pad-top offset-1">
+                                        <p>Contraseña</p>
+                                    </div>
+                                </div>
+
+                                    <form action="" method="post"> 			
+
+                                        <div class="row">
+                                            <div class="col-3 login-from-row ">
+                                            <input name="usuario" type="text" placeholder="Usuario" required/>
+                                            </div>
+                                            <div class="col-3 login-from-row offset-1">
+                                            <input name="password" type="password" placeholder="Contraseña" required/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 login-from-row">
+                                                <button class="btn btn-info">Entrar</button>
+                                            </div>
+                                        </div>
+                                     </form>
+                            </div>
+                    </div>
+
+                        
+            </div>
+
+            <div class="col-4">
+
+            </div>
+
+        </div>
+        
+
+    </section>
+
+    <section class ="border">
+        <div class="row">
+        
+                <div class="col-8">
+                        <div class="container bg-light">
+                                
+                                <p class="fas fa-map-marked user-aumento py-5 px-3">  Direccion</p>
+                                <form>
+
+                                        <div class="form-group"> <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label">Nombre Completo</label>
+                                            <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="nombre">
+                                        </div>    
+                                    
+                                        <div class="form-group"> <!-- Street 1 -->
+                                            <label for="street1_id" class="control-label">Calle</label>
+                                            <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Calle">
+                                        </div>                    
+                                    
+                                        <div class="form-group"> <!-- City-->
+                                            <label for="city_id" class="control-label">Ciudad</label>
+                                            <input type="text" class="form-control" id="city_id" name="city" placeholder="Ciudad">
+                                        </div>                                    
+                                                                
+                                        <div class="form-group"> <!-- State Button -->
+                                            <label for="state_id" class="control-label">Estado</label>
+                                            <select class="form-control" id="state_id">
+                                                <option value="CDMX">Ciudad de Mexico</option>
+                                                <option value="EDOMX">Estado de Mexico</option>
+                                                <option value="VER">VERACRUZ</option>
+                                                <option value="HDG">HIDALGO</option>
+                                                <option value="PBL">PUEBLA</option>
+                                            
+                                            </select>                    
+                                        </div>
+                                        
+                                        <div class="form-group"> <!-- Zip Code-->
+                                            <label for="zip_id" class="control-label">Codigo Postal</label>
+                                            <input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####">
+                                        </div>        
+                                        
+                                        <div class="form-group"> <!-- Submit Button -->
+                                            <p>a</p>
+                                        </div>     
+                                        
+                                    </form>
+                        </div>
+                </div>
+
+        </div>
+    </section>
+
+  <!-- End your project here-->
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+  <script>
+    function aparecer(){
+      var ancla = document.getElementsByClassName('form-control');
+      for(var i = 0;i<ancla.length;i++){
+        ancla[i].classList.toggle('desaparece')
+      }
+    }
+
+
+
+
+
+    </script>
+
+</body>
+</html>

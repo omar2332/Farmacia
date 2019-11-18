@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Nosotros</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Start your project here-->  
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top expandir">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">FARMACIA</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+        
+                  <li>
+                      
+                    <a class="nav-link far fa-user fa-2x sesion" href="InicioSesion.html"></a>
+        
+                  </li>
+    
+                  <li>
+                        
+                        <a class="nav-link fas fa-cart-plus fa-2x sesion" href="cart.html"></a>
+                  </li>
+
+                  <li>
+                    <input type="email" class="form-control desaparece" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buscar">
+                  </li>
+    
+                  <li>
+                    <a class="nav-link fab fa-sistrix fa-2x sesion" onclick="aparecer()" href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <header class="bg-danger text-white">
+                <div class="container text-center">
+                     <h2>Nuestra Ubicacion</h2>
+                    <p class="lead">Av. Universidad 3000, C.U., Coyoacán, 04510 Ciudad de México, CDMX</p>
+                </div>
+            </header>
+    <div class="container py-md-5">
+        
+            <div class="row justify-content-center">
+                <div class="col-lg-7 ">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30120.759338991615!2d-99.20266805667039!3d19.321687113244185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffe3a6173eb1%3A0x23b17fe46313a438!2sInstituto%20de%20Biolog%C3%ADa!5e0!3m2!1ses-419!2smx!4v1573743636197!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="container py-sm-3">
+        <div class="row justify-content-center">
+                <div class=""shadow p-3 mb-5 bg-white rounded">
+                    <div class="card" style="width: 25rem;">
+                            <img src="http://placehold.it/700x400" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">FARMACIA</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Proyecto Ingenieria</h6>
+                                    <p class="card-text">Aqui va informacion sobre la empresa, quienes son, que hacen, etc, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, doloribus!</p>
+                                <a href="#" class="card-link">Algun Link</a>
+                              
+                            </div>
+                    </div>
+            
+            </div>
+      </div>
+
+      
+    </div>
+
+      <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright</p>
+        </div>
+        <!-- /.container -->
+      </footer>
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+  <script>
+    function aparecer(){
+      var ancla = document.getElementsByClassName('form-control');
+      for(var i = 0;i<ancla.length;i++){
+        ancla[i].classList.toggle('desaparece')
+      }
+    }
+    </script>
+
+</body>
+</html>

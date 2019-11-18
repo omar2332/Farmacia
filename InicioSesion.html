@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Iniciar Sesion</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+    <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Start your project here-->  
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top expandir">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">FARMACIA</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+    
+              <li>
+                  
+                <a class="nav-link far fa-user fa-2x sesion" href="InicioSesion.html"></a>
+    
+              </li>
+              </li>
+    
+              <li>
+                    
+                    <a class="nav-link fas fa-cart-plus fa-2x sesion" href="cart.html"></a>
+              </li>
+
+              <li>
+                <input type="email" class="form-control desaparece" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buscar">
+              </li>
+    
+              <li>
+                <a class="nav-link fab fa-sistrix fa-2x sesion" onclick="aparecer()" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+  <header class="bg-info text-white">
+      <div class="container text-center">
+          <h1 class="tituloInicio">FARMACIA</h1>
+      </div>
+  </header>
+  
+  <div class="container-fluid">
+        <div class="row ">
+          <div class="d-md-flex col-md-3 col-lg-2"></div>
+          <div class="col-md-5 col-lg-8">
+            <div class="login py-lg-5 align-items-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-2 col-lg-8 mx-auto">
+                    <h3 class="login-heading mb-4 text-sm-center">INICIO DE SESION</h3>
+                    <form>
+                      <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electronico" required autofocus>
+                        <label for="inputEmail">Correo Electronico</label>
+                      </div>
+      
+                      <div class="form-label-group">
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+                        <label for="inputPassword">Contraseña</label>
+                      </div>
+                      <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Registrarse</button>
+                      <div class="text-center">
+                        <a class="small" href="#">¿Olvidaste tu contraseña?</a></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright</p>
+        </div>
+        <!-- /.container -->
+      </footer>
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+  <script>
+    function aparecer(){
+      var ancla = document.getElementsByClassName('form-control');
+      for(var i = 0;i<ancla.length;i++){
+        ancla[i].classList.toggle('desaparece')
+      }
+    }
+    </script>
+
+</body>
+</html>
