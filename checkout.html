@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Inicio</title>
+  <title>D</title>
   <!-- MDB icon -->
   <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
   <!-- Font Awesome -->
@@ -95,26 +95,23 @@
                                 <div class="col">
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-secondary active">
-                                          <input type="radio" name="options" id="option1" autocomplete="off"  onclick="aparecer1()"> Ya tengo cuenta
+                                          <input type="radio" name="options" id="option1" autocomplete="off" onchange="funcion()"> Ya tengo cuenta
                                         </label>
                                         <label class="btn btn-secondary">
-                                          <input type="radio" name="options" id="option2" autocomplete="off" onclick="aparecer2()"> Crea cuenta
-                                        </label>
-                                        <label class="btn btn-secondary">
-                                          <input type="radio" name="options" id="option3" autocomplete="off" onclick="aparecer3()"> Invitado
+                                          <input type="radio" name="options" id="option2" autocomplete="off" onchange="funcion2()" > Crea cuenta
                                         </label>
                                       </div>
                                 </div>
                             </div>
 
                             
-                            <div class="col-12 control-datos">
+                            <div class="col-12 formulario" id="control-datos1" name = "InicioSesionFormulario">
 
                                 <div class="row align-items-end">
                                     <div class="col-3 pad-top">
                                         <p>Correo electrónico</p>
                                     </div>
-                                    <div class="col-3 pad-top offset-1">
+                                    <div class="col-3 pad-top offset-2">
                                         <p>Contraseña</p>
                                     </div>
                                 </div>
@@ -125,7 +122,7 @@
                                             <div class="col-3 login-from-row ">
                                             <input name="usuario" type="text" placeholder="Usuario" required/>
                                             </div>
-                                            <div class="col-3 login-from-row offset-1">
+                                            <div class="col-3 login-from-row offset-2">
                                             <input name="password" type="password" placeholder="Contraseña" required/>
                                             </div>
                                         </div>
@@ -135,6 +132,52 @@
                                             </div>
                                         </div>
                                      </form>
+                            </div>
+
+                            <div class="col-12 py-3  formulario desaparece" id="control-datos1" name = "InicioSesionFormulario">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="well well-sm">
+                                            <form class="form-horizontal" method="post">
+                                                <fieldset>
+                            
+                                                    <div class="form-group">
+                                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                                        <div class="col-md-8">
+                                                            <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                                        <div class="col-md-8">
+                                                            <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                                        </div>
+                                                    </div>
+                            
+                                                    <div class="form-group">
+                                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-address-card bigicon"></i></span>
+                                                        <div class="col-md-8">
+                                                            <input id="email" name="email" type="text" placeholder="Correo Electronico" class="form-control">
+                                                        </div>
+                                                    </div>
+                            
+                                                    <div class="form-group">
+                                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                                        <div class="col-md-8">
+                                                            <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                                                        </div>
+                                                    </div>
+                            
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                     </div>
 
@@ -156,7 +199,7 @@
                 <div class="col-8">
                         <div class="container bg-light">
                                 
-                                <p class="fas fa-map-marked user-aumento py-5 px-3">  Direccion</p>
+                                <p class="fas fa-map-marked user-aumento py-5 px-3">  2.Direccion</p>
                                 <form>
 
                                         <div class="form-group"> <!-- Full Name -->
@@ -190,16 +233,40 @@
                                             <label for="zip_id" class="control-label">Codigo Postal</label>
                                             <input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####">
                                         </div>        
-                                        
-                                        <div class="form-group"> <!-- Submit Button -->
-                                            <p>a</p>
-                                        </div>     
+                                        <div class="row bg-warning">
+                                                <div class="col-5">
+                                                        <p class="text-dark">Confirmo que mi direccion de entrega es correcta.*</p>
+                                                </div>
+                                                <div class="col-1 custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                                                        <label class="custom-control-label " for="defaultUnchecked"></label>
+                                                </div>
+                                                
+
+                                        </div>
                                         
                                     </form>
                         </div>
                 </div>
 
         </div>
+    </section class= "border">
+        <div class="row">
+            <div class="col-8">
+                <div class="container bg-light">
+                        
+                        <p class="fas fa-shipping-fast user-aumento py-5 px-3">  3.Envio</p>
+
+                </div>
+                    
+                    
+            </div>
+
+            
+        </div>
+    <section>
+
+
     </section>
 
   <!-- End your project here-->
@@ -211,7 +278,10 @@
         <!-- /.container -->
     </footer>
   <!-- jQuery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
@@ -219,9 +289,9 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
+  <script type="text/javascript" src = "js/misjs.js"></script>
 
-  <script>
+  <script >
     function aparecer(){
       var ancla = document.getElementsByClassName('form-control');
       for(var i = 0;i<ancla.length;i++){
@@ -231,9 +301,7 @@
 
 
 
-
-
-    </script>
+</script>
 
 </body>
 </html>

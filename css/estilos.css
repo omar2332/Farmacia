@@ -55,3 +55,26 @@
 .desaparece_3{
     display: none;
 }
+
+.checki{
+    width:40px;
+    height:40px;
+}
+
+.thumbnail {
+    position: relative;
+   }
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+   }
+
+.nosotros_espaciado_x{
+    padding-right: 20em;
+}
+
+.espaciado_registrase{
+    padding-top: 10px;
+}
