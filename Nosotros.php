@@ -1,70 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Nosotros</title>
-  <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="css/mdb.min.css">
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <!-- Start your project here-->  
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top expandir">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">FARMACIA</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio
-                      <span class="sr-only">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                  </li>
-        
-                  <li>
-                      
-                    <a class="nav-link far fa-user fa-2x sesion" href="InicioSesion.html"></a>
-        
-                  </li>
-    
-                  <li>
-                        
-                        <a class="nav-link fas fa-cart-plus fa-2x sesion" href="cart.html"></a>
-                  </li>
-
-                  <li>
-                    <input type="email" class="form-control desaparece" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buscar">
-                  </li>
-    
-                  <li>
-                    <a class="nav-link fab fa-sistrix fa-2x sesion" onclick="aparecer()" href="#"></a>
-                  </li>
-                </ul>
-              </div>
+<?php include('header.php') ?>
             </div>
           </nav>
+
           <header class="bg-danger text-white">
                 <div class="container text-center">
                      <h2>Nuestra Ubicacion</h2>
